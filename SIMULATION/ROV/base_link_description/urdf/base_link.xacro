@@ -1,0 +1,196 @@
+<?xml version="1.0" ?>
+<robot name="base_link" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find base_link_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find base_link_description)/urdf/base_link.trans" />
+<xacro:include filename="$(find base_link_description)/urdf/base_link.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="-0.010736730994943194 0.01969939534421125 -0.003117585031601138" rpy="0 0 0"/>
+    <mass value="0.9857826632912501"/>
+    <inertia ixx="0.010721" iyy="0.006285" izz="0.014418" ixy="2.4e-05" iyz="0.000263" ixz="2.5e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find base_link_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find base_link_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="CW1_1">
+  <inertial>
+    <origin xyz="0.011110881220799465 -2.12608324418051e-07 0.019244243989836957" rpy="0 0 0"/>
+    <mass value="0.08552871519242579"/>
+    <inertia ixx="2.1e-05" iyy="2.1e-05" izz="2.2e-05" ixy="0.0" iyz="-0.0" ixz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.109506 0.086922 0.014315" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find base_link_description)/meshes/CW1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.109506 0.086922 0.014315" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find base_link_description)/meshes/CW1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="CW2_1">
+  <inertial>
+    <origin xyz="-1.271741300740148e-07 -0.0222211021357103 -2.961220561120692e-07" rpy="0 0 0"/>
+    <mass value="0.08552871519242579"/>
+    <inertia ixx="2.1e-05" iyy="2.3e-05" izz="2.1e-05" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.075743 -0.04293 -0.059688" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find base_link_description)/meshes/CW2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.075743 -0.04293 -0.059688" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find base_link_description)/meshes/CW2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="CW3_1">
+  <inertial>
+    <origin xyz="0.01111036103271866 6.095196294908511e-08 0.019243959535916847" rpy="0 0 0"/>
+    <mass value="0.08552871519242579"/>
+    <inertia ixx="2.1e-05" iyy="2.1e-05" izz="2.2e-05" ixy="0.0" iyz="-0.0" ixz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.06811 -0.126452 0.045444" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find base_link_description)/meshes/CW3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.06811 -0.126452 0.045444" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find base_link_description)/meshes/CW3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="CCW1_1">
+  <inertial>
+    <origin xyz="-0.01104550951469821 6.356588178534073e-05 0.019283560122849493" rpy="0 0 0"/>
+    <mass value="0.08554910511736716"/>
+    <inertia ixx="2.1e-05" iyy="2.1e-05" izz="2.2e-05" ixy="-0.0" iyz="0.0" ixz="-1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.08983 0.086922 0.017452" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find base_link_description)/meshes/CCW1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.08983 0.086922 0.017452" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find base_link_description)/meshes/CCW1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="CCW2_1">
+  <inertial>
+    <origin xyz="7.536320391035578e-05 -0.022222726875103273 6.327359581264486e-05" rpy="0 0 0"/>
+    <mass value="0.08554910511736716"/>
+    <inertia ixx="2.1e-05" iyy="2.3e-05" izz="2.1e-05" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.054257 -0.041423 -0.059887" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find base_link_description)/meshes/CCW2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.054257 -0.041423 -0.059887" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find base_link_description)/meshes/CCW2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="CCW3_1">
+  <inertial>
+    <origin xyz="-0.0110457710361212 6.383944207263847e-05 0.019283283087862445" rpy="0 0 0"/>
+    <mass value="0.08554910511736716"/>
+    <inertia ixx="2.1e-05" iyy="2.1e-05" izz="2.2e-05" ixy="-0.0" iyz="0.0" ixz="-1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.090967 -0.126452 0.04307" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find base_link_description)/meshes/CCW3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.090967 -0.126452 0.04307" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find base_link_description)/meshes/CCW3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Revolute 24" type="continuous">
+  <origin xyz="-0.109506 -0.086922 -0.014315" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="CW1_1"/>
+  <axis xyz="-0.5 -0.0 -0.866025"/>
+</joint>
+
+<joint name="Revolute 25" type="continuous">
+  <origin xyz="-0.075743 0.04293 0.059688" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="CW2_1"/>
+  <axis xyz="-0.0 1.0 -0.0"/>
+</joint>
+
+<joint name="Revolute 27" type="continuous">
+  <origin xyz="0.06811 0.126452 -0.045444" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="CW3_1"/>
+  <axis xyz="-0.5 0.0 -0.866025"/>
+</joint>
+
+<joint name="Revolute 28" type="continuous">
+  <origin xyz="0.08983 -0.086922 -0.017452" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="CCW1_1"/>
+  <axis xyz="0.5 -0.0 -0.866025"/>
+</joint>
+
+<joint name="Revolute 29" type="continuous">
+  <origin xyz="0.054257 0.041423 0.059887" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="CCW2_1"/>
+  <axis xyz="-0.0 1.0 0.0"/>
+</joint>
+
+<joint name="Revolute 30" type="continuous">
+  <origin xyz="-0.090967 0.126452 -0.04307" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="CCW3_1"/>
+  <axis xyz="0.5 -0.0 -0.866025"/>
+</joint>
+
+</robot>
